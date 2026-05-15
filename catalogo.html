@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroPlanta | Catálogo de Cuidados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-success" href="index.html"><img src="logo.png"
+                        alt="Logo de la pagina" width="35 px"> AgroPlanta</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="catalogo.html">Catálogo y Cuidados</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="carrito.html">🛒 Carrito (0)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+        <h2 class="text-center mb-4">Guía de Cuidados Agrícolas</h2>
+
+        <section id="filtros" class="row g-3 mb-5 justify-content-center">
+            <div class="col-md-6">
+                <input type="text" id="busqueda" class="form-control" placeholder="Buscar planta por nombre...">
+            </div>
+            <div class="col-md-auto">
+                <div class="btn-group" role="group" aria-label="Filtrar por categoría">
+                    <button type="button" class="btn btn-outline-success" data-categoria="todos">Todos</button>
+                    <button type="button" class="btn btn-outline-success" data-categoria="frutales">Frutales</button>
+                    <button type="button" class="btn btn-outline-success" data-categoria="cactaceas">Cactáceas</button>
+                    <button type="button" class="btn btn-outline-success" data-categoria="arbustos">Arbustos</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="lista-plantas" class="row g-4">
+
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">&copy; 2026 AgroPlanta</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/catalogo.js"></script>
+</body>
+
+</html>

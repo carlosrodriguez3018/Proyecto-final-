@@ -1,0 +1,71 @@
+.navbar {
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid var(--verde-principal);
+    
+}
+:root {
+    --verde-principal: #2e7d32;
+    --verde-claro: #81c784;
+    --verde-hover: #1b5e20;
+    --fondo-sitio: #f9fbf9;
+    --texto-oscuro: #2c3e50;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--fondo-sitio);
+    color: var(--texto-oscuro);
+}
+
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(46, 125, 50, 0.15) !important;
+}
+
+.card-img-top {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.btn-success {
+    background-color: var(--verde-principal);
+    border-color: var(--verde-principal);
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover,
+.btn-outline-success:hover {
+    background-color: var(--verde-hover);
+    border-color: var(--verde-hover);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* --- Cart item styles (replaces inline styles injected from carrito.js) --- */
+.cart-item-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-item-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.input-qty {
+    width: 70px;
+}

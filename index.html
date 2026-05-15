@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroPlanta | Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-success" href="index.html"><img src="logo.png"
+                        alt="Logo de la pagina" width="35 px"> AgroPlanta</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo y Cuidados</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="carrito.html">🛒 Carrito (0)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="text-white text-center">
+            <div class="container py-5">
+                <h1 class="display-4 fw-bold">Cultiva tu conocimiento, cosecha tu futuro</h1>
+                <p class="lead mt-3">La plataforma definitiva para agricultores. Aprende a cuidar tus plantas y adquiere
+                    las mejores especies.</p>
+                <div class="mt-4">
+                    <a href="catalogo.html" class="btn btn-light btn-lg me-2">Explorar catálogo</a>
+                    <a href="tienda.html" class="btn btn-outline-light btn-lg">Ir a la tienda</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="categorias" class="container py-5">
+            <h2 class="text-center mb-5">Nuestras Categorías</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <span class="display-4">🌳</span>
+                            <h4 class="card-title mt-3">Árboles Frutales</h4>
+                            <a href="catalogo.html?cat=frutales" class="btn btn-outline-success mt-3">Ver cuidados</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <span class="display-4">🌵</span>
+                            <h4 class="card-title mt-3">Cactáceas</h4>
+                            <a href="catalogo.html?cat=cactaceas" class="btn btn-outline-success mt-3">Ver cuidados</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <span class="display-4">🌿</span>
+                            <h4 class="card-title mt-3">Arbustos</h4>
+                            <a href="catalogo.html?cat=arbustos" class="btn btn-outline-success mt-3">Ver cuidados</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-funciona" class="bg-light py-5">
+            <div class="container text-center">
+                <h2 class="mb-5">¿Cómo funciona AgroPlanta?</h2>
+                <div class="pasos-container">
+                    <div class="paso-item">
+                        <h4>1. Elige tu planta</h4>
+                        <p class="text-muted">Explora nuestras categorías y encuentra la especie ideal para ti.</p>
+                    </div>
+                    <div class="paso-item">
+                        <h4>2. Aprende a cuidarla</h4>
+                        <p class="text-muted">Consulta guías detalladas sobre riego, clima y temporada de siembra.</p>
+                    </div>
+                    <div class="paso-item">
+                        <h4>3. Adquiérela</h4>
+                        <p class="text-muted">Cómprala directamente en nuestra tienda y recíbela lista para plantar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="destacadas" class="container py-5">
+            <h2 class="text-center mb-5">Plantas Destacadas</h2>
+            <div class="row g-4">
+                <!-- Populated dynamically by js/inicio.js -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 AgroPlanta. Proyecto Final.</p>
+            <ul>
+                <ol>Gmail: AgroPlanta@gmail.com</ol>
+                <ol>Numero: 333 123 1234</ol>
+                <ol>Direccion: Choques mateos</ol>
+
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/inicio.js"></script>
+</body>
+
+</html>

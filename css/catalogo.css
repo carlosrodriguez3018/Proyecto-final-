@@ -1,0 +1,8 @@
+#filtros .btn-group .btn {
+    transition: all 0.2s ease;
+}
+
+#lista-plantas .badge {
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+}

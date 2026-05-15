@@ -1,0 +1,197 @@
+{
+  "plantas": [
+    {
+      "id": 1,
+      "nombre": "Limonero Persa",
+      "categoria": "frutales",
+      "precio": 350.00,
+      "stock": 426,
+      "imagen": "https://www.viveroelencanto.com/wp-content/uploads/2023/07/587-LIMON-PERSA-1.jpg",
+      "descripcion": "Árbol frutal vigoroso, ideal para climas cálidos. Empieza a dar frutos a partir del segundo año.",
+      "cuidados": {
+        "riego": "Frecuente, 3 veces por semana en verano.",
+        "luz": "Luz solar directa (mínimo 6-8 horas diarias).",
+        "suelo": "Tierra bien drenada y ligeramente ácida.",
+        "temperatura": "Ideal entre 20°C y 30°C. Proteger de heladas.",
+        "poda": "Poda de formación en invierno, quitando ramas secas."
+      }
+    
+    },
+    {
+      "id": 13,
+      "nombre": "Nopal de Castilla",
+      "categoria": "cactaceas",
+      "precio": 110.00,
+      "stock": 12,
+      "imagen": "https://inaturalist-open-data.s3.amazonaws.com/photos/2980572/large.jpg",
+      "descripcion": "Cactácea emblemática de alto valor nutricional y agrícola. De ella se aprovechan las pencas tiernas (nopalitos) para consumo y produce un fruto dulce y muy cotizado: la tuna.",
+      "cuidados": {
+        "riego": "Muy escaso. Regar únicamente cuando el sustrato esté completamente seco para evitar la pudrición de las raíces.",
+        "luz": "Pleno sol durante todo el día. Es indispensable para que dé frutos.",
+        "suelo": "Pobre, arenoso o pedregoso, con un drenaje excelente.",
+        "temperatura": "Ideal para climas cálidos y áridos. Tolera frío moderado, pero es sensible a las heladas continuas bajo cero.",
+        "poda": "Cosecha regular de pencas y raleo para mantener el equilibrio y evitar que la planta se quiebre por su propio peso."
+      }
+    },
+    {
+      "id": 3,
+      "nombre": "Zarzamora",
+      "categoria": "arbustos",
+      "precio": 180.00,
+      "stock": 98,
+      "imagen": "https://lacasadelassetas.com/blog/wp-content/uploads/2020/07/zarzamoras-la-casa-de-las-setas-08.jpg",
+      "descripcion": "Arbusto trepador altamente productivo. Sus frutos son ricos en antioxidantes y muy demandados para repostería y mermeladas.",
+      "cuidados": {
+        "riego": "Frecuente, mantener el suelo húmedo pero sin encharcar.",
+        "luz": "Sol directo o semisombra.",
+        "suelo": "Suelo rico en materia orgánica, profundo y bien drenado.",
+        "temperatura": "Soporta el frío, ideal entre 15°C y 25°C.",
+        "poda": "Poda drástica en invierno de las ramas que ya dieron fruto."
+      }
+    },
+    {
+      "id": 4,
+      "nombre": "Aguacate Hass",
+      "categoria": "frutales",
+      "precio": 450.00,
+      "stock": 340,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_795008-MLM71787488519_092023-O.webp",
+      "descripcion": "El 'oro verde'. Árbol frutal de alto rendimiento comercial. Da frutos cremosos de cáscara rugosa, ideales para el mercado nacional y exportación.",
+      "cuidados": {
+        "riego": "Moderado. Muy sensible al exceso de agua en las raíces.",
+        "luz": "Pleno sol.",
+        "suelo": "Suelo franco-arenoso, excelente drenaje y pH neutro.",
+        "temperatura": "Climas cálidos a templados sin heladas (18°C a 28°C).",
+        "poda": "Poda de formación en los primeros años y para mantener la altura."
+      }
+    },
+    {
+      "id": 5,
+      "nombre": "Pitahaya (Fruta del Dragón)",
+      "categoria": "cactaceas",
+      "precio": 250.00,
+      "stock": 67,
+      "imagen": "https://cdn0.ecologiaverde.com/es/posts/1/1/2/cuidados_de_la_pitaya_para_su_cultivo_2211_1_600.jpg",
+      "descripcion": "Cactus trepador que produce un fruto exótico de alto valor en el mercado gourmet. Excelente opción para zonas con poca disponibilidad de agua.",
+      "cuidados": {
+        "riego": "Escaso a moderado. Regar solo cuando el sustrato esté completamente seco.",
+        "luz": "Sol directo o malla sombra ligera (70% luz).",
+        "suelo": "Sustrato para cactus, pedregoso y con drenaje perfecto.",
+        "temperatura": "Muy tolerante al calor intenso. Evitar heladas.",
+        "poda": "Poda de raleo para guiar el cactus por su tutor."
+      }
+    },
+    {
+      "id": 6,
+      "nombre": "Arándano Azul",
+      "categoria": "arbustos",
+      "precio": 220.00,
+      "stock": 125,
+      "imagen": "https://www.magicgardenseeds.es/media/image/product/5897/md/heidelbeere-blaubeere-vaccinium-myrtillus-bio-saatgut~3.jpg",
+      "descripcion": "Arbusto compacto que produce bayas azules de alto valor nutricional. Ideal para cultivo en macetas grandes o suelo directo controlado.",
+      "cuidados": {
+        "riego": "Constante, requiere tierra húmeda y agua sin tanta cal.",
+        "luz": "Pleno sol a semisombra.",
+        "suelo": "Suelo estrictamente ácido (pH 4.5 a 5.5).",
+        "temperatura": "Requiere horas de frío en invierno para fructificar.",
+        "poda": "Poda de rejuvenecimiento eliminando madera vieja de más de 3 años."
+      }
+    },
+    {
+      "id": 7,
+      "nombre": "Mango Ataulfo",
+      "categoria": "frutales",
+      "precio": 380.00,
+      "stock": 400,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_641972-MLM87318690366_072025-O.webp",
+      "descripcion": "Árbol tropical vigoroso que produce mangos dulces, sin fibra y de semilla delgada. Variedad mexicana por excelencia.",
+      "cuidados": {
+        "riego": "Abundante durante la floración y cuajado del fruto; reducir en maduración.",
+        "luz": "Pleno sol (requiere mucha luz para endulzar el fruto).",
+        "suelo": "Profundo, rico y bien drenado.",
+        "temperatura": "Clima cálido (24°C a 30°C). Sensible al frío extremo.",
+        "poda": "Poda sanitaria tras la cosecha para abrir el dosel a la luz."
+      }
+    },
+    {
+      "id": 8,
+      "nombre": "Agave Espadín",
+      "categoria": "cactaceas",
+      "precio": 150.00,
+      "stock": 50,
+      "imagen": "https://mezcalmalaespina.com/wp-content/uploads/Campo-agaves-espadin-joven.webp",
+      "descripcion": "Aunque es una suculenta (manejada aquí comercialmente como cactácea), es la base de la industria del mezcal. Madura entre 6 y 8 años.",
+      "cuidados": {
+        "riego": "Mínimo. Sobrevive con el agua de lluvia en su hábitat natural.",
+        "luz": "Exposición total al sol.",
+        "suelo": "Suelos pobres, calcáreos y pedregosos.",
+        "temperatura": "Soporta temperaturas extremas, tanto calor como frío moderado.",
+        "poda": "Eliminación de maleza alrededor y corte de pencas secas."
+      }
+    },
+    {
+      "id": 9,
+      "nombre": "Higuera",
+      "categoria": "frutales",
+      "precio": 290.00,
+      "stock": 39,
+      "imagen": "https://www.hola.com/horizon/square/3a4869d098d0-gettyimages-1335962301.jpg",
+      "descripcion": "Árbol rústico de rápido crecimiento. Puede dar dos cosechas al año (brevas e higos). Muy resistente a la sequía una vez establecido.",
+      "cuidados": {
+        "riego": "Moderado. Tolera sequía pero los frutos mejoran con riegos regulares.",
+        "luz": "Pleno sol.",
+        "suelo": "Se adapta a casi cualquier suelo, preferiblemente con buen drenaje.",
+        "temperatura": "Soporta altas temperaturas y tolera bien el frío invernal.",
+        "poda": "Poda severa en invierno para estimular brotes nuevos."
+      }
+    },
+    {
+      "id": 10,
+      "nombre": "Chile Piquín",
+      "categoria": "arbustos",
+      "precio": 130.00,
+      "stock": 40,
+      "imagen": "https://www.cocinadelirante.com/688x516/filters:format(webp):quality(75)/sites/default/files/styles/gallerie/public/chile-piquin.jpg",
+      "descripcion": "Arbusto silvestre domesticado. Produce pequeños chiles de gran picor y excelente sabor, muy cotizados en la gastronomía nacional.",
+      "cuidados": {
+        "riego": "Frecuente, sin encharcar el sustrato.",
+        "luz": "Semisombra o luz filtrada (en la naturaleza crece bajo los árboles).",
+        "suelo": "Suelto, rico en humus.",
+        "temperatura": "Cálida. Proteger del frío y las heladas.",
+        "poda": "Poda ligera para mantener la forma del arbusto."
+      }
+    },
+    {
+      "id": 11,
+      "nombre": "Naranjo Dulce",
+      "categoria": "frutales",
+      "precio": 320.00,
+      "stock": 83,
+      "imagen": "https://cdn.palbincdn.com/users/15174/upload/images/naranjo-dulce-planta-medicinal.jpg",
+      "descripcion": "Árbol cítrico clásico. Excelente para huertos comerciales por su alta producción de fruta para jugo y mesa.",
+      "cuidados": {
+        "riego": "Regular a abundante, especialmente en la formación del fruto.",
+        "luz": "Pleno sol. Requiere mucha iluminación para florecer.",
+        "suelo": "Ligeramente ácido y con buena retención de humedad sin encharcar.",
+        "temperatura": "Ideal entre 15°C y 30°C. Proteger de vientos fuertes.",
+        "poda": "Quitar los 'chupones' (ramas improductivas) y airear el centro del árbol."
+      }
+    },
+    {
+      "id": 12,
+      "nombre": "Romero Culinario",
+      "categoria": "arbustos",
+      "precio": 90.00,
+      "stock": 68,
+      "imagen": "https://hitplant.com/wp-content/uploads/2025/02/5.jpg",
+      "descripcion": "Arbusto aromático indispensable en la cocina e industria de aceites esenciales. Extremadamente resistente y de fácil propagación.",
+      "cuidados": {
+        "riego": "Poco frecuente. Dejar secar la tierra por completo entre riegos.",
+        "luz": "Pleno sol todo el día.",
+        "suelo": "Pobre, arenoso o pedregoso. Odia la tierra pesada y arcillosa.",
+        "temperatura": "Tolera el frío y el calor extremo.",
+        "poda": "Cosecha constante de puntas; poda anual para evitar que se vuelva leñoso."
+      }
+    }
+  ]
+}

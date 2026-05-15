@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroPlanta | Detalle de Planta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detalle.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-success" href="index.html"><img src="logo.png"
+                        alt="Logo de la pagina" width="35 px"> AgroPlanta</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo y Cuidados</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="carrito.html">🛒 Carrito (0)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5 flex-grow-1">
+        <a href="catalogo.html" class="btn btn-outline-secondary mb-4">⬅ Volver al Catálogo</a>
+
+        <div class="row" id="info-principal">
+            <div class="col-md-6">
+                <div id="contenedor-imagen-detalle" class="text-center mb-3">
+                    <!-- Image injected by js/detalle.js -->
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1 id="nombre-planta">Cargando...</h1>
+                <p id="descripcion-planta" class="text-muted">Obteniendo información botánica...</p>
+                <hr>
+
+                <h3>Ficha Técnica</h3>
+                <table class="table table-striped mt-3 shadow-sm">
+                    <tbody>
+                        <tr>
+                            <th>💧 Riego</th>
+                            <td id="riego">--</td>
+                        </tr>
+                        <tr>
+                            <th>☀️ Luz Solar</th>
+                            <td id="luz">--</td>
+                        </tr>
+                        <tr>
+                            <th>🌱 Suelo</th>
+                            <td id="suelo">--</td>
+                        </tr>
+                        <tr>
+                            <th>🌡️ Temperatura</th>
+                            <td id="temperatura">--</td>
+                        </tr>
+                        <tr>
+                            <th>✂️ Poda</th>
+                            <td id="poda">--</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div id="adquirir" class="mt-4 p-4 bg-light rounded shadow-sm">
+                    <h4>Adquirir ejemplar</h4>
+                    <p class="h2 text-success mb-3" id="precio-planta">$0.00</p>
+                    <p class="text-muted small">Stock disponible: <span id="stock-planta" class="fw-bold">--</span></p>
+                    <div class="d-flex align-items-center mb-3">
+                        <label for="cantidad-planta" class="me-3 fw-bold">Cantidad:</label>
+                        <input type="number" id="cantidad-planta" class="form-control w-25" value="1" min="1" max="50">
+                    </div>
+                    <button id="btn-agregar-detalle" class="btn btn-success btn-lg w-100">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 mb-5">
+            <div class="col-12">
+                <div class="card border-info shadow-sm wiki-card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <span>W</span> Sabías que... (Dato curioso vía Wikipedia)
+                        </h5>
+                        <p id="info-wikipedia" class="card-text text-muted mb-0">
+                            <em>Buscando información en la enciclopedia libre... 🔍</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 AgroPlanta</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/detalle.js"></script>
+</body>
+
+</html>
