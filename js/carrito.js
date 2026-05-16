@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     renderizarCarrito();
 
-    // Listeners registered once here, not inside renderizarCarrito(),
-    // preventing duplicate handlers on each re-render.
     document.getElementById('btn-vaciar').addEventListener('click', vaciarCarrito);
     document.getElementById('btn-finalizar').addEventListener('click', finalizarCompra);
 });
@@ -16,7 +14,7 @@ function finalizarCompra() {
     const carrito = JSON.parse(localStorage.getItem('carritoAgroPlanta')) || [];
     if (carrito.length === 0) return;
 
-    // Persist purchase history to simulate stock reduction across sessions
+    
     const historial = JSON.parse(localStorage.getItem('historialCompras')) || {};
     carrito.forEach(item => {
         historial[item.id] = (historial[item.id] || 0) + item.cantidad;
@@ -61,7 +59,6 @@ function renderizarCarrito() {
 
         const stockReal = Math.max(0, (item.stockOriginal || 50) - (historial[item.id] || 0));
 
-        // CSS classes .cart-item-info, .cart-item-img, .input-qty replace all inline styles
         cuerpoCarrito.innerHTML += `
             <tr>
                 <td>
