@@ -2,6 +2,7 @@ let todasLasPlantas = [];
 let categoriaActual = 'todos';
 
 document.addEventListener('DOMContentLoaded', () => {
+    actualizarBadgeCarrito();
     cargarCatalogo();
     configurarEventos();
 });
@@ -26,7 +27,7 @@ async function cargarCatalogo() {
     }
 }
 
-function configurarEventos() {
+async function configurarEventos() {
     document.querySelectorAll('#filtros .btn-group .btn').forEach(boton => {
         boton.addEventListener('click', (e) => {
             categoriaActual = e.target.getAttribute('data-categoria');
@@ -88,4 +89,14 @@ function renderizarCatalogo(plantas) {
                 </div>
             </div>`;
     });
+}
+function actualizarBadgeCarrito() {
+    let carrito = JSON.parse(localStorage.getItem('carritoAgroPlanta')) || [];
+    const totalArticulos = carrito.reduce((acc, item) => acc + item.cantidad, 0);
+    
+    const badge = document.getElementById('badge-carrito');
+    if(badge) {
+        // Si el total es mayor a 0 muestra el número, si no, lo deja en blanco o en 0
+        badge.textContent = totalArticulos > 0 ? totalArticulos : '0';
+    }
 }

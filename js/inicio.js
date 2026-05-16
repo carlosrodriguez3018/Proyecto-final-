@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
+    actualizarBadgeCarrito();
     try {
         const respuesta = await fetch('data/plantas.json');
         const datos = await respuesta.json();
@@ -25,3 +26,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error('Error al cargar plantas destacadas:', error);
     }
 });
+
+function actualizarBadgeCarrito() {
+    let carrito = JSON.parse(localStorage.getItem('carritoAgroPlanta')) || [];
+    const totalArticulos = carrito.reduce((acc, item) => acc + item.cantidad, 0);
+    
+    const badge = document.getElementById('badge-carrito');
+    if(badge) {
+        // Si el total es mayor a 0 muestra el número, si no, lo deja en blanco o en 0
+        badge.textContent = totalArticulos > 0 ? totalArticulos : '0';
+    }
+}
