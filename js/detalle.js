@@ -44,7 +44,7 @@ function renderizarDetalle(planta) {
     const inputCantidad = document.getElementById('cantidad-planta');
     inputCantidad.max = stockReal;
 
-    // CSS class .img-detalle handles sizing (no inline styles)
+    
     document.getElementById('contenedor-imagen-detalle').innerHTML =
         `<img src="${planta.imagen}" class="img-detalle shadow-sm" alt="${planta.nombre}">`;
 

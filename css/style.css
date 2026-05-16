@@ -51,7 +51,6 @@ body {
     transform: scale(1.05);
 }
 
-/* --- Cart item styles (replaces inline styles injected from carrito.js) --- */
 .cart-item-info {
     display: flex;
     align-items: center;
